@@ -110,7 +110,7 @@ char *convert_number(long int num, int base, int flags)
 	*d = '\0';
 
 	do	{
-		*--d = p[n % base];
+		*--d = p[f % base];
 		f /= base;
 	} while (f != 0);
 

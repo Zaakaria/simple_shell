@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * add_node - will add a node to the list's start 
- * @head: it is pointer's address to node's head 
+ * add_node - will add a node to the list's start
+ * @head: it is pointer's address to node's head
  * @str: it is str field of node
  * @num: it is node index used by history
  *
@@ -34,7 +34,7 @@ list_t *add_node(list_t **head, const char *str, int num)
 }
 
 /**
- * add_node_end - will add a node to the list's end 
+ * add_node_end - will add a node to the list's end
  * @head: it is address of pointer to head node
  * @str: it is str field of node
  * @num: it is node index used by history

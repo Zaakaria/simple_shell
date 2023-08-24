@@ -33,7 +33,7 @@ char **list_to_strings(list_t *head)
 
 	if (!head || !e)
 		return (NULL);
-	r = malloc(sizeof(char *) * (i + 1));
+	r = malloc(sizeof(char *) * (e + 1));
 	if (!r)
 		return (NULL);
 	for (e = 0; z; z = z->next, e++)
@@ -50,7 +50,7 @@ char **list_to_strings(list_t *head)
 		t = _strcpy(t, z->str);
 		r[e] = t;
 	}
-	r[i] = NULL;
+	r[e] = NULL;
 	return (r);
 }
 
@@ -93,7 +93,7 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 	while (node)
 	{
 		u = starts_with(node->str, prefix);
-		if (p && ((c == -1) || (*u == c)))
+		if (u && ((c == -1) || (*u == c)))
 			return (node);
 		node = node->next;
 	}

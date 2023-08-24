@@ -28,7 +28,7 @@ char *get_history_file(info_t *info)
  * write_history - will create a file, or appends to existing file
  * @info: it is the parameter struct
  *
- * Return: on success 1, -1 else 
+ * Return: on success 1, -1 else
  */
 int write_history(info_t *info)
 {

@@ -37,7 +37,7 @@ int _mycd(info_t *info)
 	char *u, *o, buffer[1024];
 	int p;
 
-	s = getcwd(buffer, 1024);
+	u = getcwd(buffer, 1024);
 	if (!u)
 		_puts("TODO: >>getcwd failure emsg here<<\n");
 	if (!info->argv[1])

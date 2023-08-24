@@ -31,7 +31,7 @@ int is_chain(info_t *info, char *buf, size_t *p)
 	}
 	else
 		return (0);
-	*p = j;
+	*p = a;
 	return (1);
 }
 
@@ -90,7 +90,7 @@ int replace_alias(info_t *info)
 		t = _strchr(r->str, '=');
 		if (!t)
 			return (0);
-		p = _strdup(t + 1);
+		t = _strdup(t + 1);
 		if (!t)
 			return (0);
 		info->argv[0] = t;
@@ -109,7 +109,7 @@ int replace_vars(info_t *info)
 	int y = 0;
 	list_t *u;
 
-	for (y = 0; info->argv[y]; i++)
+	for (y = 0; info->argv[y]; y++)
 	{
 		if (info->argv[y][0] != '$' || !info->argv[y][1])
 			continue;

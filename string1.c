@@ -78,7 +78,7 @@ int _putchar(char c)
 	if (c == BUF_FLUSH || t >= WRITE_BUF_SIZE)
 	{
 		write(1, y, t);
-		i = 0;
+		t = 0;
 	}
 	if (c != BUF_FLUSH)
 		y[t++] = c;
