@@ -4,7 +4,7 @@
  * **strtow - will split a string into words
  * @str: it is the input string
  * @d: it is the delimeter string
- * Return: pointer to an array of strings, on failure NULL 
+ * Return: pointer to an array of strings, on failure NULL
  */
 
 char **strtow(char *str, char *d)
@@ -52,7 +52,7 @@ char **strtow(char *str, char *d)
  * **strtow2 - will split string into words
  * @str: it is the input string
  * @d: it is the delimeter
- * Return: pointer to an array of strings, on failure NULL 
+ * Return: pointer to an array of strings, on failure NULL
  */
 char **strtow2(char *str, char d)
 {

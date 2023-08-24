@@ -79,7 +79,7 @@ int print_alias(list_t *node)
 }
 
 /**
- * _myalias - will mimic alias built-in 
+ * _myalias - will mimic alias built-in
  * @info: Structure that contains potential arguments
  *  Return: it is always 0
  */
